@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Spring I/0 2024 Recap - </title>
+
+  <meta name="description" content="Today, I feel the Spring I/O conference blues! The weather is getting a bit colder, but the runway is still heated from the sun, and I feel similarly about Spring I/O. I still feel the warmth from all the good conversations and interactions I had and am inspired by the presentations I watched.
+Now I am back in Berlin at one of my favorite spots, reflecting on the great conference from two weeks ago."><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Work \u0026 other Flows",
+    
+    "url": "http:\/\/nlea.de\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/nlea.de\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/nlea.de\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/nlea.de\/post\/2024\/01__springio\/",
+          "name": "Spring i 0 2024 recap"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "Spring I\/0 2024 Recap",
+  "description" : "Today, I feel the Spring I\/O conference blues! The weather is getting a bit colder, but the runway is still heated from the sun, and I feel similarly about Spring I\/O. I still feel the warmth from all the good conversations and interactions I had and am inspired by the presentations I watched.\nNow I am back in Berlin at one of my favorite spots, reflecting on the great conference from two weeks ago.",
+  "inLanguage" : "en",
+  "wordCount":  1158 ,
+  "datePublished" : "2024-06-12T14:52:15\u002b02:00",
+  "dateModified" : "2024-06-12T14:52:15\u002b02:00",
+  "image" : "http:\/\/nlea.de\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "http:\/\/nlea.de\/post\/2024\/01__springio\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/nlea.de\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/nlea.de\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Spring I/0 2024 Recap" />
+<meta property="og:description" content="Today, I feel the Spring I/O conference blues! The weather is getting a bit colder, but the runway is still heated from the sun, and I feel similarly about Spring I/O. I still feel the warmth from all the good conversations and interactions I had and am inspired by the presentations I watched.
+Now I am back in Berlin at one of my favorite spots, reflecting on the great conference from two weeks ago.">
+<meta property="og:url" content="http://nlea.de/post/2024/01__springio/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Work &amp; other Flows" />
+
+  <meta name="twitter:title" content="Spring I/0 2024 Recap" />
+  <meta name="twitter:description" content="Today, I feel the Spring I/O conference blues! The weather is getting a bit colder, but the runway is still heated from the sun, and I feel similarly about Spring I/O. I still feel the warmth from all …">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.92.2" />
+  <link rel="alternate" href="http://nlea.de/index.xml" type="application/rss+xml" title="Work &amp; other Flows"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://nlea.de/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="http://nlea.de/css/syntax.css" /><link rel="stylesheet" href="http://nlea.de/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://nlea.de/">Work &amp; other Flows</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Spring I/0 2024 Recap</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on June 12, 2024
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p><img src="/img/springio.png" alt="Tempelhofer field Berlin"></p>
+<p>Today, I feel the <a href="https://2024.springio.net/">Spring I/O</a> conference blues! The weather is getting a bit colder, but the runway is still heated from the sun, and I feel similarly about Spring I/O. I still feel the warmth from all the good conversations and interactions I had and am inspired by the presentations I watched.</p>
+<p>Now I am back in Berlin at one of my favorite spots, reflecting on the great conference from two weeks ago.</p>
+<h2 id="my-content-highlight">My Content Highlight:</h2>
+<p>The presentation: “Micrometer Mastery: Unleash Advanced Observability in your JVM Apps.” (video is not online yet) was my personal presentation highlight. I work in the observability space and have used <a href="https://micrometer.io/">Micrometer</a> in a few of my demos. The presentation was a continuation of the <a href="https://www.youtube.com/watch?v=fh3VbrPvAjg">talk from 2023</a> and covered more advanced features. The core of the presentation, but also for me, was the <a href="https://docs.micrometer.io/micrometer/reference/observation.html">observation API</a>. A single API to get more customized logs, metrics, and traces from your application is quite neat. Shoutout to the observation API:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Create an ObservationRegistry
+</span><span style="color:#75715e"></span>ObservationRegistry registry <span style="color:#f92672">=</span> ObservationRegistry<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">();</span>
+<span style="color:#75715e">// Register an ObservationHandler
+</span><span style="color:#75715e"></span>registry<span style="color:#f92672">.</span><span style="color:#a6e22e">observationConfig</span><span style="color:#f92672">().</span><span style="color:#a6e22e">observationHandler</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> MyHandler<span style="color:#f92672">());</span>
+
+<span style="color:#75715e">// Create an Observation and observe your code!
+</span><span style="color:#75715e"></span>Observation<span style="color:#f92672">.</span><span style="color:#a6e22e">createNotStarted</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;user.name&#34;</span><span style="color:#f92672">,</span> registry<span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">contextualName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;getting-user-name&#34;</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">lowCardinalityKeyValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;userType&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;userType1&#34;</span><span style="color:#f92672">)</span> <span style="color:#75715e">// let&#39;s assume that you can have 3 user types
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">highCardinalityKeyValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;userId&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;1234&#34;</span><span style="color:#f92672">)</span> <span style="color:#75715e">// let&#39;s assume that this is an arbitrary number
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">observe</span><span style="color:#f92672">(()</span> <span style="color:#f92672">-&gt;</span> log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello&#34;</span><span style="color:#f92672">));</span> <span style="color:#75715e">// this is a shortcut for starting an observation, opening a scope, running user&#39;s code, closing the scope and stopping the observation
+</span><span style="color:#75715e"></span>
+</code></pre></div><p><em>Source from the code and more information in <a href="https://spring.io/blog/2022/10/12/observability-with-spring-boot-3">this post</a></em></p>
+<p>Additionally, I learned about <a href="https://docs.micrometer.io/micrometer-docs-generator/reference/">automated documentation</a> with Micrometer and leveraging the ObservationHandler. A fun aspect was learning how observation can sound and imagining how an SRE team&rsquo;s office can add an acoustic experience to their dashboards.</p>
+<p>Micrometer is also compatible with <a href="https://opentelemetry.io/">OpenTelemetry</a>. Knowing that OpenTelemetry is gaining more traction, it is good to know that it is not an either-or decision. One can still use the Micrometer API for instrumenting the code and then propagate in an OTEL-compatible format.
+Speaking of OpenTelemetry, I saw some other Cloud Native topics at Spring I/O. I attended the talk “<a href="https://www.youtube.com/watch?v=pMGz54Gstas">Dapr and Spring Boot - Solving the Challenges of Distributed Systems</a>” by Thomas Vitale and Maurico Salatino. It was a great outline of how <a href="https://dapr.io/">Dapr</a> APIs enable easy access to Cloud Native technologies and components needed for building distributed systems without the need to learn all the tool APIs.</p>
+<h2 id="highlights-beside-content">Highlights beside content</h2>
+<p>I liked how the conference embraced making new connections and meeting new people. There was a pre-evening event for attendees to connect before the conference. During the conference, there was an attendee memory game where attendees had to find a partner with a matching badge to get the conference T-shirt.</p>
+<p>Personally, I had such a great time reconnecting with familiar faces and meeting new people. I’d like to thank everyone I met during the conference for the great conversations, support, and energy.</p>
+<h2 id="expected-but-still-surprising">Expected but Still Surprising:</h2>
+<p>It is no surprise that <a href="https://spring.io/projects/spring-ai">Spring AI</a> was a hot topic at the conference. What surprised me during the <a href="https://www.youtube.com/watch?v=XUz4LKZx83g">keynote</a> was that Java is one of the top languages to integrate with Microsoft Azure OpenAI, and Google also mentions Spring AI as a top framework for building business applications leveraging LLMs. Away from the AI hype (I mean, which tool doesn’t have an integrated AI component nowadays?), Spring AI focuses on seamless integration and usage of AI in business applications. There were different talks around AI on the agenda.</p>
+<h2 id="my-new-learnings">My new learnings:</h2>
+<p>I explored newly <a href="https://spring.io/projects/spring-security">Spring Security</a>. Although I never needed Security for my demo applications, I think a conference is the perfect place to learn something new and step out of your comfort zone. Daniel made it easy and fun to follow along in <a href="https://www.youtube.com/watch?v=HyoLl3VcRFY">his presentation</a>, even making me think about how to implement security in my projects.</p>
+<p>Another great <a href="https://www.youtube.com/watch?v=YclrKfEUHrI">talk</a> about <a href="https://www.graalvm.org/">GraalVM</a> and native images was delivered by Alina.</p>
+<h2 id="my-take-away">My take away:</h2>
+<p>Architecture and the design of systems have always fascinated me. Seeing that most people are building microservices nowadays and the new challenges such a distributed system holds, in the keynote, <a href="https://spring.io/projects/spring-modulith">Spring Modulith</a> was mentioned by Cora. Later, during the conference, she also did a <a href="https://2024.springio.net/sessions/the-modern-monolith-with-spring-modulith/">presentation</a> on this topic (video is still not online yet). It is an approach to make a monolith application modular, addressing some of the challenges of distributed services while still following functional decomposition with common architectural practices. It is something I take away because I would like to explore it a little bit further and found the idea for that new architecture paradigm intresting.</p>
+<h2 id="something-i-missed">Something I Missed:</h2>
+<p>You can’t always be everywhere, and sometimes it is good to take a break from the talks. So, I ended up with my personal watch list:</p>
+<ul>
+<li>Implementing Domain Driven Design with Spring - Maciej Walkowiak (waiting for the video )</li>
+<li>Cracking the Code Review: from Guesswork to Automated Guidance - Paco van Beckhoven (waiting for the video and super curiuos to watch because it has been one of the most popular talks during the conference)</li>
+<li>Platform Engineering with Spring Boot - Tom Hombergs</li>
+</ul>
+<h2 id="my-rediscovery">My rediscovery:</h2>
+<p>Special to me was combining observability (call graphs and tracing) and workflows into the topic of causality. You can find my presentation slides <a href="https://www.slideshare.net/slideshow/spring-i-o-deep-and-brief-dive-into-causality/269620850">here</a>. It is interesting to discover how different tools bring causal relationships from service to service invocation to the forefront. Although the tools and their areas of usage are quite distinct, I believe it is good to understand which tools enable visibility into causal relations for complex systems. Furthermore, it is important to distinguish between tools that can also shape and design causal relations, such as workflow engines. In the end, both types of tools can help troubleshoot complex systems depending on the questions you ask. Workflows are great for answering questions about the state of a single business case in your system, while traces and call graphs, in combination with metrics and logs, can help you detect infrastructure abnormalities like increased latency.</p>
+<p>Being a workflow enthusiast for several years, it is always interesting to see new technologies and revisit the topic. I find it remarkable that there are new tools specifically focusing on workflow creation within the codebase. It is definitely an interesting approach with some benefits, and it is very developer-centric, not only in writing the workflow but also in deploying and managing the workflow alongside the application. Still, I believe that for more complex workflows, BPMN as a language remains unmatched. It was good to see at the <a href="https://testcontainers.com/">Testcontainers</a> booth that they now support running Testcontainers for Zeebe workflow applications.</p>
+<h2 id="ending-the-blues">Ending the blues</h2>
+<p>Well, I hope this post made you curious to check out and watch some of the presentations from Spring I/O 2024. After talking about the content, people, and booths, did I miss something? Probably, yes! Feeling the blues also means feeling the vibe of this special conference. So I can only encourage you to watch the videos, get excited for Spring I/O 2025, and hopefully see you there.</p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2024
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://nlea.de/">Work &amp; other Flows</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="http://nlea.de/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://nlea.de/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work &amp; other Flows</title>
+    <link>http://nlea.de/</link>
+    <description>Recent content on Work &amp; other Flows</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jun 2024 14:52:15 +0200</lastBuildDate><atom:link href="http://nlea.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring I/0 2024 Recap</title>
+      <link>http://nlea.de/post/2024/01__springio/</link>
+      <pubDate>Wed, 12 Jun 2024 14:52:15 +0200</pubDate>
+      
+      <guid>http://nlea.de/post/2024/01__springio/</guid>
+      <description>Today, I feel the Spring I/O conference blues! The weather is getting a bit colder, but the runway is still heated from the sun, and I feel similarly about Spring I/O. I still feel the warmth from all the good conversations and interactions I had and am inspired by the presentations I watched.
+Now I am back in Berlin at one of my favorite spots, reflecting on the great conference from two weeks ago.</description>
+    </item>
+    
+  </channel>
+</rss>
