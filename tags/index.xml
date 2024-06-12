@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Work &amp; other Flows</title>
-    <link>http://nlea.de/tags/</link>
+    <link>https://nlea.github.io/tags/</link>
     <description>Recent content in Tags on Work &amp; other Flows</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://nlea.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://nlea.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
